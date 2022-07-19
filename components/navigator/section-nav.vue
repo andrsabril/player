@@ -3,13 +3,13 @@
         <ul>
             <li v-for="(sec, index) in sectionNav" :key="index">
                 <div v-if="!sec.sectionHome" class="sec-title" @click="openSub(index)">
-                    <NuxtLink v-if="!sec.subSection" :to="titlePage + '/' + sec.sectionName | url">
+                    <NuxtLink v-if="!sec.subSection" :to="'/' + titlePage + '/' + sec.sectionName | url">
                        {{ sec.sectionName }}
                    </NuxtLink>
                    <p v-else>{{ sec.sectionName }}</p>
                 </div>
                 <div v-else class="sec-title">
-                    <NuxtLink :to="titlePage">
+                    <NuxtLink :to="'/' + titlePage">
                         {{ sec.sectionName }}
                     </NuxtLink>
                 </div>
@@ -22,7 +22,7 @@
                 >
                     <ul ref="subItems">
                         <li v-for="(sub, index) in sec.subSection" :key="index">
-                            <NuxtLink :to="titlePage + '/' + sub.subName | url">
+                            <NuxtLink :to="'/' + titlePage + '/' + sub.subName | url">
                                 {{ sub.subName }}
                             </NuxtLink>
                         </li>
