@@ -37,17 +37,16 @@ export default {
             sectionName: "Get Start",
             sectionHome: false,
             subSection: [
-              { subName: "For Designers" },
+              { subName: "For Designer" },
               { subName: "For Dev" },
             ],
           },
           {
-            sectionName: "Get Start 2",
+            sectionName: "Get Start",
             sectionHome: false,
             subSection: [
-              { subName: "For Designers" },
+              { subName: "For Designer" },
               { subName: "For Dev" },
-              { subName: "For Players" },
             ],
           },
         ],
