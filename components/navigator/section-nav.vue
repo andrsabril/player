@@ -3,16 +3,15 @@
         <ul>
             <li v-for="(sec, index) in sectionNav" :key="index">
                 <div v-if="!sec.sectionHome" class="sec-title" @click="openSub(index)">
-                    <NuxtLink v-if="!sec.subSection" :to="getUrlPage + '/' + sec.sectionName | url">
+                    <NuxtLink v-if="!sec.subSection" :to="titlePage + '/' + sec.sectionName | url">
                        {{ sec.sectionName }}
                    </NuxtLink>
                    <p v-else>{{ sec.sectionName }}</p>
                 </div>
                 <div v-else class="sec-title">
-                    <NuxtLink v-if="!sec.subSection" :to="getUrlPage">
+                    <NuxtLink :to="titlePage">
                         {{ sec.sectionName }}
                     </NuxtLink>
-                    <p v-else>{{ sec.sectionName }}</p>
                 </div>
                 <div
                     
@@ -23,11 +22,8 @@
                 >
                     <ul ref="subItems">
                         <li v-for="(sub, index) in sec.subSection" :key="index">
-                            <NuxtLink v-if="!sec.sectionHome" :to="getUrlPage + '/' + sec.sectionName + '/' + sub.subName | url">
-                                    {{ sub.subName }}
-                            </NuxtLink>
-                            <NuxtLink v-else :to="getUrlPage + '/' + sub.subName | url">
-                                    {{ sub.subName }}
+                            <NuxtLink :to="titlePage + '/' + sub.subName | url">
+                                {{ sub.subName }}
                             </NuxtLink>
                         </li>
                     </ul>
@@ -45,11 +41,6 @@
                 value = value.toLowerCase().replace(/\s+/g, '-')
                 return value;
             }
-        },
-        computed: {
-            getUrlPage(){
-                return this.titlePage.toLowerCase().replace(/\s+/g, '-');
-            },
         },
         data() {
             return {

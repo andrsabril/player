@@ -2,7 +2,7 @@
     <nav>
         <div class="logo"><div class="image"></div><h1>Player</h1></div>
         <ul>
-            <li><NuxtLink to="/">Introducction</NuxtLink></li>
+            <li><NuxtLink to="/introduction">Introduction</NuxtLink></li>
             <li><NuxtLink to="/foundations">Foundations</NuxtLink></li>
             <li><NuxtLink to="/tokens">Tokens</NuxtLink></li>
             <li><NuxtLink to="/components">Components</NuxtLink></li>
