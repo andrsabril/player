@@ -1,0 +1,48 @@
+// Light Colors
+$color-light: #FFFFFF;
+
+// Dark Colors
+$color-dark: #232323;
+$color-darkness: #1A1A1A;
+$color-darkScale-luminance: 0%;
+
+// Opacity
+$opacity-70: .7;
+$opacity-50: .5;
+$opacity-40: .4;
+$opacity-30: .3;
+$opacity-20: .2;
+$opacity-12: .12;
+$opacity-10: .1;
+$opacity-8: .08;
+$opacity-4: .04;
+$opacity-2: .02;
+$opacity-0: 0;
+
+// Light Scale
+$color-lightScale-100: rgba($color-light, $opacity-70);
+$color-lightScale-200: rgba($color-light, $opacity-40);
+$color-lightScale-300: rgba($color-light, $opacity-30);
+$color-lightScale-400: rgba($color-light, $opacity-20);
+$color-lightScale-500: rgba($color-light, $opacity-10);
+$color-lightScale-600: rgba($color-light, $opacity-8);
+$color-lightScale-700: rgba($color-light, $opacity-4);
+$color-lightScale-800: rgba($color-light, $opacity-2);
+
+// Green Squad
+$color-greenSquad-hue: 162;
+$color-greenSquad-saturation: 100%;
+
+$color-greenSquad-luminance-100: 90%;
+$color-greenSquad-luminance-200: 80%;
+$color-greenSquad-luminance-300: 50%;
+$color-greenSquad-luminance-400: 40%;
+$color-greenSquad-luminance-500: 30%;
+$color-greenSquad-luminance-600: 15%;
+
+$color-greenSquad-200: hsl($color-greenSquad-hue, $color-greenSquad-saturation, $color-greenSquad-luminance-200);
+$color-greenSquad-100: hsl($color-greenSquad-hue, $color-greenSquad-saturation, $color-greenSquad-luminance-100);
+$color-greenSquad-300: hsl($color-greenSquad-hue, $color-greenSquad-saturation, $color-greenSquad-luminance-300);
+$color-greenSquad-400: hsl($color-greenSquad-hue, $color-greenSquad-saturation, $color-greenSquad-luminance-400);
+$color-greenSquad-500: hsl($color-greenSquad-hue, $color-greenSquad-saturation, $color-greenSquad-luminance-500);
+$color-greenSquad-600: hsl($color-greenSquad-hue, $color-greenSquad-saturation, $color-greenSquad-luminance-600);
