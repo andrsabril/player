@@ -99,6 +99,9 @@
                             color: $color-light;
                         }
                     }
+                    p{
+                        cursor: pointer;
+                    }
                 }
                 .sec-sub {
                     height: 0;
