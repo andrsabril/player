@@ -9,7 +9,7 @@
                    <p v-else>{{ sec.sectionName }}</p>
                 </div>
                 <div v-else class="sec-title">
-                    <NuxtLink :to="'/' + titlePage">
+                    <NuxtLink :to="'/' + titlePage | url">
                         {{ sec.sectionName }}
                     </NuxtLink>
                 </div>

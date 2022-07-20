@@ -2,6 +2,7 @@
     <nav>
         <div class="logo"><div class="image"></div><h1>Player</h1></div>
         <ul>
+            <li><NuxtLink to="/" exact>Home</NuxtLink></li>
             <li><NuxtLink to="/introduction">Introduction</NuxtLink></li>
             <li><NuxtLink to="/foundations">Foundations</NuxtLink></li>
             <li><NuxtLink to="/tokens">Tokens</NuxtLink></li>
@@ -61,7 +62,7 @@
                 &:hover{
                     color: $color-light;
                 }
-                &.nuxt-link-exact-active {
+                &.nuxt-link-active {
                     color: $color-light;
                 }
             }
