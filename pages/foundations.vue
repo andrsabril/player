@@ -24,17 +24,46 @@ export default {
         titlePage: "Foundations",
         sectionNav: [
           {
-            sectionName: "About Player",
+            sectionName: "About Foundations",
             sectionHome: true,
             subSection: null,
           },
           {
-            sectionName: "Colors",
+            sectionName: "Brand",
             sectionHome: false,
             subSection: [
-              { subName: "Brand" },
-              { subName: "Opacity" },
+              { subName: "Id" },
+            ],
+          },
+          {
+            sectionName: "Color",
+            sectionHome: false,
+            subSection: [
+              { subName: "Generic" },
               { subName: "Gradient" },
+              { subName: "Specific" },
+            ],
+          },
+          {
+            sectionName: "Type",
+            sectionHome: false,
+            subSection: null,
+          },
+          {
+            sectionName: "Icons",
+            sectionHome: false,
+            subSection: [
+              { subName: "Base" },
+              { subName: "Flag" },
+            ],
+          },
+          {
+            sectionName: "Grid",
+            sectionHome: false,
+            subSection: [
+              { subName: "Desktop" },
+              { subName: "Tablet" },
+              { subName: "Mobile" },
             ],
           },
         ],

@@ -14,7 +14,6 @@
                     </NuxtLink>
                 </div>
                 <div
-                    
                     class="sec-sub"
                     ref="subSection"
                     :class="{ open: isOpen === index }"
@@ -22,6 +21,7 @@
                 >
                     <ul ref="subItems">
                         <li v-for="(sub, index) in sec.subSection" :key="index">
+                            <liIcon :section="sec.sectionName" :type="sub.subName" />
                             <NuxtLink :to="'/' + titlePage + '/' + sub.subName | url">
                                 {{ sub.subName }}
                             </NuxtLink>
@@ -33,7 +33,13 @@
     </div>
 </template>
 <script>
+    // Import  Components
+    import liIcon from "~/components/navigator/li-icon.vue";
+
     export default {
+        components: {
+            liIcon,
+        },
         props: ['sectionNav', 'titlePage'],
         filters: {
             url: function (value) {
@@ -108,16 +114,20 @@
                     overflow: hidden;
                     transition: height ease-in-out .3s;
                 
-                    ul {
+                    ul{
                         gap: 6px;
                         padding-top: 8px;
-                    // &.open{}
 
-                        li a{
-                            color: $color-lightScale-300;
+                        li{
+                            display: flex;
+                            flex-direction: row;
 
-                            &.nuxt-link-exact-active {
-                                color: $color-lightScale-100;
+                            a{
+                                color: $color-lightScale-300;
+
+                                &.nuxt-link-exact-active {
+                                    color: $color-lightScale-100;
+                                }
                             }
                         }
                     }
