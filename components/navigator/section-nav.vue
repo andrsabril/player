@@ -21,8 +21,8 @@
                 >
                     <ul ref="subItems">
                         <li v-for="(sub, index) in sec.subSection" :key="index">
-                            <liIcon :section="sec.sectionName" :type="sub.subName" />
                             <NuxtLink :to="'/' + titlePage + '/' + sub.subName | url">
+                                <liIcon :section="sec.sectionName" :type="sub.subName" />
                                 {{ sub.subName }}
                             </NuxtLink>
                         </li>
@@ -118,15 +118,24 @@
                         gap: 6px;
                         padding-top: 8px;
 
-                        li{
+                        li  a{
+                            color: $color-lightScale-200;
+                            font-weight: $font-weight-200;
                             display: flex;
                             flex-direction: row;
+                            flex-wrap: nowrap;
+                            align-items: baseline;
+                            gap: 4px;
 
-                            a{
-                                color: $color-lightScale-300;
+                            .icon{
+                                opacity: $opacity-40;
+                            }
 
-                                &.nuxt-link-exact-active {
-                                    color: $color-lightScale-100;
+                            &.nuxt-link-exact-active {
+                                color: $color-lightScale-100;
+
+                                .icon{
+                                    opacity: $opacity-70;
                                 }
                             }
                         }

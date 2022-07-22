@@ -1,6 +1,6 @@
 <template>
     <div class="icon" :class="section + '-' + type | url">
-        <img :src="'@/static/img/icons/' + section + '-' + type + '.svg' | url">
+        <img :src="'/img/icons/' + section + '-' + type + '.svg' | url">
     </div>
 </template>
 <script>
@@ -17,8 +17,8 @@
 </script>
 <style scoped lang="scss">
     .icon{
-        width: 16px;
-        height: 16px;
+        width: 14px;
+        height: 14px;
 
         img{
             width: 100%;
