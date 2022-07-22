@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/foundations/opacity", {data:[{},{}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/foundations/gradient", {data:[{},{}],fetch:{},mutations:void 0});
